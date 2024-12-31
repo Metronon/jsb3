@@ -1,5 +1,6 @@
 package com.ll.sbb3.controller;
 
+import com.ll.sbb3.dto.AnswerForm;
 import com.ll.sbb3.dto.QuestionForm;
 import com.ll.sbb3.entity.Question;
 import com.ll.sbb3.service.QuestionService;
@@ -30,7 +31,7 @@ public class QuestionController {
     }
 
     @GetMapping(value = "/detail/{id}")
-    public String detail(Model model, @PathVariable("id") Integer id) {
+    public String detail(Model model, @PathVariable("id") Integer id, AnswerForm answerForm) {
         Question question = this.questionService.getQuestion(id);
         model.addAttribute("question", question);
         return "question_detail";
