@@ -41,7 +41,7 @@
                     <span>다음</span>
                 </a>
             </li>
-            <li class="page-item" th:classappend="${!paging.hasPrevious} ? 'disabled'">
+            <li class="page-item" th:classappend="${!paging.hasNext()} ? 'disabled'">
                 <a class="page-link" th:href="@{|?page=${paging.totalPages-1}|}">
                     <span>마지막</span>
                 </a>
