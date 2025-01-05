@@ -1,4 +1,4 @@
-package com.ll.sbb3.dto;
+package com.ll.sbb3.form;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;

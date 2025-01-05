@@ -1,7 +1,7 @@
 package com.ll.sbb3.controller;
 
-import com.ll.sbb3.dto.AnswerForm;
-import com.ll.sbb3.dto.QuestionForm;
+import com.ll.sbb3.form.AnswerForm;
+import com.ll.sbb3.form.QuestionForm;
 import com.ll.sbb3.entity.Question;
 import com.ll.sbb3.service.QuestionService;
 import jakarta.validation.Valid;
