@@ -25,4 +25,7 @@ public class Question {
 
     @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE) // CascadeType Remove 설정으로 Question 삭제시 AnswerList 전부 삭제
     private List<Answer> answerList;
+
+    @ManyToOne
+    private SiteUser author;
 }
